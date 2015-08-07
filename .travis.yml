@@ -1,16 +1,16 @@
-# Config file for automatic testing at travis-ci.org
-
 language: python
-
 python:
-  - "3.4"
-  - "3.3"
-  - "2.7"
-  - "2.6"
-  - "pypy"
-
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -r requirements.txt
-
-# command to run tests, e.g. python setup.py test
-script: python setup.py test
+- '3.4'
+- '3.3'
+- '2.7'
+- '2.6'
+- pypy
+install: pip install -r requirements/test.txt
+cache:
+  directories:
+  - $HOME/.cache/pip
+script: coverge run --source mymovie setup.py test
+after_success: coveralls
+notifications:
+  slack:
+    secure: uziBs/EjLpSpbkI698SDicU4em4LLQ5BPSzESGD1pcL3oJ+HaVfgZY7/nRkg5mo6im27cQ2myI9StzvQoxADTG7rJKSCxub1+GHlgcugjiphBDSXlLCvCl7viy8kqLL8XQZISEOTocAEdofdH+hq0DUl9RjhiDcuhCNG8J8XXgERKwvn51bRZok8ZpTX9EdXRdZzdkwafx75F5GuEz9RiHdoebdt7YgitZxuUUnEjU0+tOSzBj+8rc11E4NLVQEBrvfLnp4hJ6zdn08EOr5GNQpuyPQMHfx8vFP25dTgIiixUU4Frji1GKT+tzBS7cSEdZQ1nr5RkwnEeqqSwrfLB/An1N4pjPEZQjtyLWex1YDk9rbx1T6MWSmOHwwpYyC5YWuG0izL/M+QIsiAzlhHVS+SAJSrAOcS5VyoU/u7CquQgI+REEdHs7A5nvoXMaFqMVV7Rd/cqnxc2GI8ruudfxIit0m+itsQYA5jN6hnXEugRwBSD1I+40kCUiqyH90K1M2/ILHFYXWEYaMe/MbcExTEKK2mAbXAiNqSLQ6CcAea1QYbGYej5VbSa6RUnjTYHmeCbFFPXLWkkrIgJrie+BMmhGnGLMuG9OXnIrQE+KpSYzh13q+mTbB+MtmGp70hIabcK5W5xFMm7UgyVxPb5AFj3W5w20OtPsdJpgHPyNA=

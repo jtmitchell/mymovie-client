@@ -23,7 +23,7 @@ test_requirements = [
 ]
 
 setup(
-    name='mymovie-client',
+    name='mymovie',
     version='0.1.0',
     description="Python commandline client for the MyMovie service",
     long_description=readme + '\n\n' + history,
@@ -31,19 +31,19 @@ setup(
     author_email='james.mitchell@maungawhau.net.nz',
     url='https://github.com/jtmitchell/mymovie-client',
     packages=[
-        'mymovie-client',
+        'mymovie',
     ],
-    package_dir={'mymovie-client':
-                 'mymovie-client'},
+    package_dir={'mymovie':
+                 'mymovie'},
     include_package_data=True,
     install_requires=requirements,
-    license="BSD",
+    license="GPLv2",
     zip_safe=False,
-    keywords='mymovie-client',
+    keywords='mymovie',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.6',

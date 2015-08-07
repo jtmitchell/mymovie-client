@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*-
 
 """
-test_mymovie-client
+test_mymovie_client
 ----------------------------------
 
-Tests for `mymovie-client` module.
+Tests for `mymovie.client` module.
 """
 
 import unittest
 
-from mymovie-client import mymovie-client
+from mymovie import client
 
 
-class TestMymovie-client(unittest.TestCase):
+class TestMymovieClient(unittest.TestCase):
 
     def setUp(self):
         pass

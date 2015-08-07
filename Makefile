@@ -35,7 +35,7 @@ clean-test:
 	rm -fr htmlcov/
 
 lint:
-	flake8 mymovie-client tests
+	flake8 mymovie tests
 
 test:
 	python setup.py test
@@ -44,15 +44,15 @@ test-all:
 	tox
 
 coverage:
-	coverage run --source mymovie-client setup.py test
+	coverage run --source mymovie setup.py test
 	coverage report -m
 	coverage html
 	open htmlcov/index.html
 
 docs:
-	rm -f docs/mymovie-client.rst
+	rm -f docs/mymovie.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ mymovie-client
+	sphinx-apidoc -o docs/ mymovie
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
