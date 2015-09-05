@@ -33,6 +33,11 @@ setup(
     packages=[
         'mymovie',
     ],
+    entry_points={
+        'console_scripts': [
+            'mymovie = mymovie.__main__:main'
+        ]
+    },
     package_dir={'mymovie':
                  'mymovie'},
     include_package_data=True,

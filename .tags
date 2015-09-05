@@ -1,0 +1,89 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SPHINXBUILD	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^	set SPHINXBUILD=sphinx-build$/;"	variable	line:6
+BUILDDIR	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^set BUILDDIR=_build$/;"	variable	line:8
+ALLSPHINXOPTS	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^set ALLSPHINXOPTS=-d %BUILDDIR%\/doctrees %SPHINXOPTS% .$/;"	variable	line:9
+I18NSPHINXOPTS	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^set I18NSPHINXOPTS=%SPHINXOPTS% .$/;"	variable	line:10
+ALLSPHINXOPTS	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^	set ALLSPHINXOPTS=-D latex_paper_size=%PAPER% %ALLSPHINXOPTS%$/;"	variable	line:12
+I18NSPHINXOPTS	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^	set I18NSPHINXOPTS=-D latex_paper_size=%PAPER% %I18NSPHINXOPTS%$/;"	variable	line:13
+PAPER	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^	echo.  latex      to make LaTeX files, you can set PAPER=a4 or PAPER=letter$/;"	variable	line:30
+end	/home/james/work/maungawhau/Workspace/mymovie-client/docs/make.bat	/^:end$/;"	label	line:242
+cwd	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^cwd = os.getcwd()$/;"	variable	line:26
+project_root	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^project_root = os.path.dirname(cwd)$/;"	variable	line:27
+extensions	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']$/;"	variable	line:43
+templates_path	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^templates_path = ['_templates']$/;"	variable	line:46
+source_suffix	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^source_suffix = '.rst'$/;"	variable	line:49
+master_doc	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^master_doc = 'index'$/;"	variable	line:55
+project	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^project = u'MyMovie Client'$/;"	variable	line:58
+copyright	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^copyright = u'2015, James Mitchell'$/;"	variable	line:59
+version	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^version = mymovie.__version__$/;"	variable	line:66
+release	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^release = mymovie.__version__$/;"	variable	line:68
+exclude_patterns	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^exclude_patterns = ['_build']$/;"	variable	line:82
+pygments_style	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^pygments_style = 'sphinx'$/;"	variable	line:100
+html_theme	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^html_theme = 'default'$/;"	variable	line:114
+html_static_path	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^html_static_path = ['_static']$/;"	variable	line:145
+htmlhelp_basename	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^htmlhelp_basename = 'mymoviedoc'$/;"	variable	line:191
+latex_elements	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^latex_elements = {$/;"	variable	line:196
+latex_documents	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^latex_documents = [$/;"	variable	line:210
+man_pages	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^man_pages = [$/;"	variable	line:241
+texinfo_documents	/home/james/work/maungawhau/Workspace/mymovie-client/docs/conf.py	/^texinfo_documents = [$/;"	variable	line:256
+SPHINXOPTS	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^SPHINXOPTS    =$/;"	macro	line:5
+SPHINXBUILD	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^SPHINXBUILD   = sphinx-build$/;"	macro	line:6
+PAPER	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^PAPER         =$/;"	macro	line:7
+BUILDDIR	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^BUILDDIR      = _build$/;"	macro	line:8
+PAPEROPT_a4	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^PAPEROPT_a4     = -D latex_paper_size=a4$/;"	macro	line:16
+PAPEROPT_letter	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^PAPEROPT_letter = -D latex_paper_size=letter$/;"	macro	line:17
+ALLSPHINXOPTS	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^ALLSPHINXOPTS   = -d $(BUILDDIR)\/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .$/;"	macro	line:18
+I18NSPHINXOPTS	/home/james/work/maungawhau/Workspace/mymovie-client/docs/Makefile	/^I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .$/;"	macro	line:20
+language	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^language: python$/;"	function	line:1
+python	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^python:$/;"	function	line:2
+install	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^install: pip install -r requirements\/test.txt$/;"	function	line:8
+cache	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^cache:$/;"	function	line:9
+directories	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^  directories:$/;"	function	line:10
+script	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^script: coverage run --source mymovie setup.py test$/;"	function	line:12
+after_success	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^after_success: coveralls$/;"	function	line:13
+notifications	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^notifications:$/;"	function	line:14
+slack	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^  slack:$/;"	function	line:15
+secure	/home/james/work/maungawhau/Workspace/mymovie-client/.travis.yml	/^    secure: uziBs\/EjLpSpbkI698SDicU4em4LLQ5BPSzESGD1pcL3oJ+HaVfgZY7\/nRkg5mo6im27cQ2myI9StzvQoxADTG7rJKSCxub1+GHlgcugjiphBDSXlLCvCl7viy8kqLL8XQZISEOTocAEdofdH+hq0DUl9RjhiDcuhCNG8J8XXgERKwvn51bRZok8ZpTX9EdXRdZzdkwafx75F5GuEz9RiHdoebdt7YgitZxuUUnEjU0+tOSzBj+8rc11E4NLVQEBrvfLnp4hJ6zdn08EOr5GNQpuyPQMHfx8vFP25dTgIiixUU4Frji1GKT+tzBS7cSEdZQ1nr5RkwnEeqqSwrfLB\/An1N4pjPEZQjtyLWex1YDk9rbx1T6MWSmOHwwpYyC5YWuG0izL\/M+QIsiAzlhHVS+SAJSrAOcS5VyoU\/u7CquQgI+REEdHs7A5nvoXMaFqMVV7Rd\/cqnxc2GI8ruudfxIit0m+itsQYA5jN6hnXEugRwBSD1I+40kCUiqyH90K1M2\/ILHFYXWEYaMe\/MbcExTEKK2mAbXAiNqSLQ6CcAea1QYbGYej5VbSa6RUnjTYHmeCbFFPXLWkkrIgJrie+BMmhGnGLMuG9OXnIrQE+KpSYzh13q+mTbB+MtmGp70hIabcK5W5xFMm7UgyVxPb5AFj3W5w20OtPsdJpgHPyNA=$/;"	function	line:16
+TestMymovieClient	/home/james/work/maungawhau/Workspace/mymovie-client/tests/test_mymovie_client.py	/^class TestMymovieClient(unittest.TestCase):$/;"	class	line:16
+setUp	/home/james/work/maungawhau/Workspace/mymovie-client/tests/test_mymovie_client.py	/^    def setUp(self):$/;"	member	line:18	class:TestMymovieClient
+test_something	/home/james/work/maungawhau/Workspace/mymovie-client/tests/test_mymovie_client.py	/^    def test_something(self):$/;"	member	line:21	class:TestMymovieClient
+tearDown	/home/james/work/maungawhau/Workspace/mymovie-client/tests/test_mymovie_client.py	/^    def tearDown(self):$/;"	member	line:24	class:TestMymovieClient
+__author__	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__init__.py	/^__author__ = 'James Mitchell'$/;"	variable	line:3
+__email__	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__init__.py	/^__email__ = 'james.mitchell@maungawhau.net.nz'$/;"	variable	line:4
+__version__	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__init__.py	/^__version__ = '0.1.0'$/;"	variable	line:5
+__all__	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^__all__ = []$/;"	variable	line:24
+DEBUG	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^DEBUG = 1$/;"	variable	line:26
+TESTRUN	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^TESTRUN = 0$/;"	variable	line:27
+PROFILE	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^PROFILE = 0$/;"	variable	line:28
+main	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^def main(argv=None):$/;"	function	line:31
+profile_filename	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^        profile_filename = '__main___profile.txt'$/;"	variable	line:77
+statsfile	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^        statsfile = open("profile_stats.txt", "wb")$/;"	variable	line:79
+p	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^        p = pstats.Stats(profile_filename, stream=statsfile)$/;"	variable	line:80
+stats	/home/james/work/maungawhau/Workspace/mymovie-client/mymovie/__main__.py	/^        stats = p.strip_dirs().sort_stats('cumulative')$/;"	variable	line:81
+readme	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    readme = readme_file.read()$/;"	variable	line:12
+history	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    history = history_file.read().replace('.. :changelog:', '')$/;"	variable	line:15
+requirements	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^requirements = [$/;"	variable	line:17
+test_requirements	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^test_requirements = [$/;"	variable	line:21
+name	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    name='mymovie',$/;"	variable	line:26
+version	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    version='0.1.0',$/;"	variable	line:27
+description	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    description="Python commandline client for the MyMovie service",$/;"	variable	line:28
+long_description	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    long_description=readme + '\\n\\n' + history,$/;"	variable	line:29
+author	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    author="James Mitchell",$/;"	variable	line:30
+author_email	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    author_email='james.mitchell@maungawhau.net.nz',$/;"	variable	line:31
+url	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    url='https:\/\/github.com\/jtmitchell\/mymovie-client',$/;"	variable	line:32
+packages	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    packages=[$/;"	variable	line:33
+entry_points	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    entry_points={$/;"	variable	line:36
+package_dir	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    package_dir={'mymovie':$/;"	variable	line:41
+include_package_data	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    include_package_data=True,$/;"	variable	line:43
+install_requires	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    install_requires=requirements,$/;"	variable	line:44
+license	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    license="GPLv2",$/;"	variable	line:45
+zip_safe	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    zip_safe=False,$/;"	variable	line:46
+keywords	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    keywords='mymovie',$/;"	variable	line:47
+classifiers	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    classifiers=[$/;"	variable	line:48
+test_suite	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    test_suite='tests',$/;"	variable	line:60
+tests_require	/home/james/work/maungawhau/Workspace/mymovie-client/setup.py	/^    tests_require=test_requirements$/;"	variable	line:61
