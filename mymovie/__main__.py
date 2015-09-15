@@ -9,21 +9,24 @@ __main__ is a client for MyMovie
 
 @copyright:  2015 James Mitchell. All rights reserved.
 
-@license:    GPLv2
+@license:    GPLv3
 
 @contact:    james.mitchell@maungawhau.net.nz
 @deffield    updated: 2015-08-10
 '''
 
-from optparse import OptionParser
+import argparse
 import os
 import sys
 
+from mymovie.search import OMDB
+
 from . import __version__, __author__
+
 
 __all__ = []
 
-DEBUG = 1
+DEBUG = 0
 TESTRUN = 0
 PROFILE = 0
 
@@ -34,29 +37,53 @@ def main(argv=None):
     program_name = os.path.basename(sys.argv[0])
     program_version = __version__
 
-    program_version_string = '%%prog %s'.format(program_version)
     program_longdesc = ''''''  # optional - give further explanation about what the program does
-    program_license = "Copyright 2015 {0}".format(__author__) +                                            \
-        "Licensed under the GPLv2.0\nhttp://www.gnu.org/licenses/old-licenses/gpl-2.0.txt"
+    program_license = ["Copyright 2015 {0}".format(__author__),
+                       "Licensed under the GPLv3.0",
+                       "http://www.gnu.org/licenses/gpl.txt",
+                       ]
 
     if argv is None:
         argv = sys.argv[1:]
     try:
         # setup option parser
-        parser = OptionParser(
-            version=program_version_string, epilog=program_longdesc, description=program_license)
-        parser.add_option(
-            "-s", "--search", dest="search_term", help="movie to search for", metavar="WORDS")
-        # set defaults
-        parser.set_defaults(serach_term="")
+        parser = argparse.ArgumentParser(
+            description='\n'.join(program_license), epilog=program_longdesc)
+        parser.add_argument('--version', action='version', version=program_version)
+        parser.add_argument(
+            "-s", "--search", dest="search_term", help="movie to search for", type=str)
+        parser.add_argument(
+            "-i", "--imdb_id", dest="imdb_id", help="IMDB id for the movie", type=str)
+        parser.add_argument(
+            "-v", "--verbose", dest="verbose", help="be more verbose", action="store_true")
 
         # process options
-        (opts, args) = parser.parse_args(argv)
+        args = parser.parse_args(argv)
 
-        if opts.search_term:
-            print("search_term= {}".format(opts.search_term))
-
-        # MAIN BODY #
+        search_service = OMDB()
+        if args.search_term:
+            results = search_service.search(args.search_term)
+            for result in results:
+                print('"{0}" ({1} {2}) - id: {3}'.format(
+                    result.get('Title'),
+                    result.get('Year'),
+                    result.get('Type'),
+                    result.get('imdbID'),
+                ))
+                if args.verbose:
+                    print('{0}\n'.format(result))
+        if args.imdb_id:
+            result = search_service.get(movie_id=args.imdb_id)
+            if result:
+                print('"{0}" ({1}) - id: {2}'.format(
+                    result.get('Title'),
+                    result.get('Year'),
+                    result.get('imdbID'),
+                ))
+                if args.verbose:
+                    print('{0}\n'.format(result))
+            else:
+                print('No result')
 
     except Exception as e:
         indent = len(program_name) * " "
@@ -66,8 +93,6 @@ def main(argv=None):
 
 
 if __name__ == "__main__":
-    if DEBUG:
-        sys.argv.append("-h")
     if TESTRUN:
         import doctest
         doctest.testmod()
