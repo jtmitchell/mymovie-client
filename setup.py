@@ -7,19 +7,19 @@ try:
 except ImportError:
     from distutils.core import setup
 
-
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
+
 requirements = [
-    #     'requests',
+    'requests==2.7.0',
 ]
 
 test_requirements = [
-    #     'mock',
+    'mock==1.0.1',
 ]
 
 setup(
