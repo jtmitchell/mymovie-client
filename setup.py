@@ -15,11 +15,11 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 requirements = [
-    'requests',
+    #     'requests',
 ]
 
 test_requirements = [
-    'mock',
+    #     'mock',
 ]
 
 setup(
@@ -42,7 +42,7 @@ setup(
                  'mymovie'},
     include_package_data=True,
     install_requires=requirements,
-    license="GPLv2",
+    license="GPLv3",
     zip_safe=False,
     keywords='mymovie',
     classifiers=[
