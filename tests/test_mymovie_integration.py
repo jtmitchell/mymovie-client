@@ -1,8 +1,7 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """
-test_mymovie
+test_mymovie_integration
 ----------------------------------
 
 Tests for `mymovie.client` module.
@@ -10,7 +9,6 @@ Tests for `mymovie.client` module.
 
 import unittest
 
-from mymovie import client, search
 from mymovie.search import OMDB
 
 

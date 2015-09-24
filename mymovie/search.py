@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
-from urllib.parse import quote_plus
+import sys
 
 import requests
+if sys.version_info[0] >= 3:
+    # Python 3 imports
+    from urllib.parse import quote_plus as url_quote
+else:
+    from urllib import quote as url_quote
 
 
 class OMDB(object):
@@ -16,7 +21,7 @@ class OMDB(object):
     def search(self, search_term, search_type='movie'):
         params = dict(
             t=search_type,
-            s=quote_plus(search_term),
+            s=url_quote(search_term),
         )
         response = requests.get(
             url=self.base_url,
