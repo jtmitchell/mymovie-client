@@ -9,8 +9,10 @@ Unit Tests for `mymovie.client` module.
 
 import unittest
 
-from mymovie.search import OMDB
 import mock
+
+from mymovie.__main__ import main
+from mymovie.search import OMDB
 from tests.mock_utils import MockResponse
 
 
@@ -38,6 +40,11 @@ class TestMymovieSearch(unittest.TestCase):
         self.client.search(self.movie_name)
         mock_search.assert_called_with(self.movie_name)
 
+    @mock.patch('mymovie.search.OMDB.search')
+    def test_search_cmdline(self, mock_search):
+        main(['-s', self.movie_name])
+        mock_search.assert_called_with(self.movie_name)
+
     @mock.patch('requests.get')
     def test_get(self, mock_get):
         response_data = dict(
@@ -57,4 +64,9 @@ class TestMymovieSearch(unittest.TestCase):
     @mock.patch('mymovie.search.OMDB.get')
     def test_get_id_call(self, mock_search):
         self.client.get(movie_id=self.movie_id)
+        mock_search.assert_called_with(movie_id=self.movie_id)
+
+    @mock.patch('mymovie.search.OMDB.get')
+    def test_get_id_cmdline(self, mock_search):
+        main(['-i', self.movie_id])
         mock_search.assert_called_with(movie_id=self.movie_id)
