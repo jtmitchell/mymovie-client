@@ -15,11 +15,11 @@ with open('HISTORY.rst') as history_file:
 
 
 requirements = [
-    'requests==2.7.0',
+    'requests',
 ]
 
 test_requirements = [
-    'mock==1.0.1',
+    'mock',
 ]
 
 setup(
