@@ -12,18 +12,6 @@ import unittest
 from mymovie.search import OMDB
 
 
-class TestMymovieClient(unittest.TestCase):
-
-    def setUp(self):
-        pass
-
-    def test_something(self):
-        pass
-
-    def tearDown(self):
-        pass
-
-
 class TestMymovieSearch(unittest.TestCase):
 
     movie_name = 'Casablanca'

@@ -7,9 +7,13 @@ DEFAULT_URL = 'http://mymovie-api.maungawhau.net.nz/api/v1'
 class Watchlist(object):
     """Client object for communicating with the server."""
 
-    def __init__(self, user, password, url=None):
+    def __init__(self, user=None, password=None, url=None):
         self.url = DEFAULT_URL if url is None else url
-        self.token = self.auth(user, password)
+        if user and password:
+            self.token = self.auth(user, password)
+            self._set_header()
+
+    def _set_header(self):
         self.headers = dict(
             content_type='application/json',
             authorization='JWT {0}'.format(self.token),
@@ -98,7 +102,7 @@ class Watchlist(object):
         {
             "moviename": "Star Trek",
             "service": "omdb",
-            "service_id": "tt0796366"
+            "service_id": "tt0796366",
             "notifywhen":
                 [
                     0, 2, 3
