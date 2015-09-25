@@ -27,6 +27,30 @@ class TestMymovieWatchlist(unittest.TestCase):
         self.client._set_header()
 
     @mock.patch('requests.post')
+    def test_setup(self, mock_post):
+        user = 'Test'
+        password = 'test001'
+        token = '123.456.789'
+        mock_post.return_value = MockResponse(
+            json_data=dict(token=token),
+            status_code=200,
+        )
+        client = Watchlist(user, password)
+        mock_post.assert_called_with(
+            data=dict(
+                username=user,
+                password=password,
+            ),
+            url=self.url + '/auth/login',
+        )
+        self.assertEqual(
+            token, client.token, 'watchlist client has incorrect token {0}'.format(client.token))
+        self.assertEqual(
+            client.headers.get('content_type'), 'application/json', 'incorrect content-type header')
+        self.assertEqual(
+            client.headers.get('authorization'), 'JWT {0}'.format(token), 'incorrect jwt auth header')
+
+    @mock.patch('requests.post')
     def test_auth(self, mock_post):
         user = 'Test'
         password = 'test001'
